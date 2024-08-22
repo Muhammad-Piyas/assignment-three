@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-them="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,25 +12,30 @@
    <!--- Font Family CDN --->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+   <!--- Font Awesome CDN --->
+   <script src="https://kit.fontawesome.com/c177988b3a.js" crossorigin="anonymous"></script>
 
    <style>
-    .manrope{
-      font-family: "Manrope", sans-serif;
+    .roboto{
+      font-family: "Roboto", sans-serif;
     } 
    </style>
 
 </head>
-<body class="manrope">
+<body class="roboto">
   
-  <header class="n">
+  <header class="bg-gradient-to-r from-[#fffffff3] to-[#ffffffe1]">
     <!--- Nav Bar --->
-    <nav class="container mx-auto lg:p-10">
+    <nav class="container mx-auto px-6 pt-6 pb-3 lg:px-12 lg:pt-12">
       <div class="flex justify-between">
-        <div>
-           
+        <!--- Logo --->
+        <div class="flex space-x-2">
+          <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full w-7 h-7 inline-flex justify-center items-center "></i>
+           <h4 class="text-xl font-extrabold">Rinterio</h4>
         </div>
-
+          <!--- Text --->
         <div>
           <ul class="lg:flex hidden lg:space-x-7 lg:font-normal lg:text-base lg:text-[#737373]">
           <li class="lg:text-[#494949] lg:font-semibold"><a>Home</a></li>
@@ -40,10 +45,37 @@
           <li><a>Contact Us</a></li>
         </ul>
       </div>
-
-        <div></div>
+          <!--- Icon and Button --->
+        <div class="flex items-center">
+          <div class="hidden lg:block space-x-2">
+            <i class="fa-solid fa-magnifying-glass btn btn-ghost btn-circle inline-flex justify-center items-center text-[#737373]"></i>
+  
+            <i class="fa-solid fa-cart-shopping btn btn-ghost btn-circle inline-flex justify-center items-center text-[#737373]"></i>
+  
+            <button class="text-[#1C1C1C] font-extrabold bg-[#ABEF5F] px-4 py-2 rounded-full">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-[#1C1C1C] rounded-full w-6 h-6 inline-flex justify-center items-center text-white "></i> </button>
+          </div>
+          <div class="lg:hidden">
+            <i class="fa-solid fa-bars inline-flex justify-center border border-2 rounded-full w-8 h-8 bg-white items-center text-[#737373]"></i>
+          </div>
+        </div>
       </div>
     </nav>
+     
+    <!--- Banner Section --->
+     <section class="container mx-auto p-6 lg:px-12">
+      <div class="hero">
+        <div class="hero-content text-center">
+          <div class="lg:space-y-10">
+            <img class="m-auto" src="image/banner.png" alt="">
+            <h1 class="lg:text-7xl text-3xl font-extrabold text-[#212121] ">A barn house of this design has a striking appearance</h1>
+            <p class="py-6 lg:py-0 font-normal text-base text-[#494949]">
+              The design is characterized by flat roofs, a prominent overhanging upper story, and a balanced composition of horizontal and vertical elements. The use of wood adds warmth to the overall look, while the glass elements contribute to a sense of openness and connection to the outdoors.
+            </p>
+            <button class="text-[#212121] font-extrabold bg-[#ABEF5F80] px-4 py-2 rounded-full">View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full w-6 h-6 inline-flex justify-center items-center text-b "></i> </button>
+          </div>
+        </div>
+      </div>
+     </section>
   </header>
 
   <main></main>
